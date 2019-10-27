@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:background="@drawable/button_background_selector"
+        android:textColor="@color/colorWhite"
+        android:text="@string/calibrate"
+        android:id="@+id/calibrate_button"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:id="@+id/calibration"
+        android:text="@string/nul"
+        app:layout_constraintTop_toBottomOf="@id/calibrate_button"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccentDark"
+        android:layout_marginTop="10dp"
+        android:id="@+id/divider1"
+        app:layout_constraintTop_toBottomOf="@id/calibration"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/directions_header"
+        android:text="@string/directions"
+        app:layout_constraintTop_toBottomOf="@id/divider1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:id="@+id/directions"
+        android:text="@string/directions_text"
+        app:layout_constraintTop_toBottomOf="@id/directions_header"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccentDark"
+        android:layout_marginTop="10dp"
+        android:id="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@id/directions"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/current_force"
+        android:text="@string/nul"
+        app:layout_constraintTop_toBottomOf="@id/divider2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:id="@+id/target_force"
+        android:text="@string/nul"
+        app:layout_constraintTop_toBottomOf="@id/current_force"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:id="@+id/in_zone"
+        android:text="@string/nul"
+        app:layout_constraintTop_toBottomOf="@id/target_force"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:id="@+id/timer"
+        android:text="@string/nul"
+        app:layout_constraintTop_toBottomOf="@id/in_zone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:id="@+id/accuracy"
+        android:text="@string/nul"
+        app:layout_constraintTop_toBottomOf="@id/timer" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:background="@drawable/button_background_selector"
+        android:textColor="@color/colorWhite"
+        android:text="@string/exit"
+        android:id="@+id/exit_button"
+        app:layout_constraintBottom_toTopOf="@id/start_button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:background="@drawable/button_background_selector"
+        android:textColor="@color/colorWhite"
+        android:text="@string/start"
+        android:id="@+id/start_button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

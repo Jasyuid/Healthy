@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthy2">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".Healthy"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_add_white_24dp"
+        android:label="Healthy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/quick_alarm"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:name=".QuickDialogueBox" />
+        <activity android:name=".RecurringDialogueBox"
+            android:label="@string/recurring_alarm"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:name=".DeleteDialogueBox"
+            android:label="@string/delete_alarm"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity
+            android:name=".AlarmReceiver"
+            android:label="@string/alarm_receiver" />
+        <activity
+            android:name=".ConnectActivity"
+            android:label="Healthy">
+        </activity>
+        <activity
+            android:name=".ActivActivity"
+            android:label="Healthy" />
+    </application>
+
+</manifest>

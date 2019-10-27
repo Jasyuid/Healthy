@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/incrementhr"
+            android:layout_width="0dp"
+            android:layout_height="121dp"
+            android:layout_weight="1" />
+
+        <NumberPicker
+            android:id="@+id/increment"
+            android:layout_width="195dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hr24"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/_24_hr"/>
+
+        <Button
+            android:id="@+id/hr"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/_1_hr"/>
+
+        <Button
+            android:id="@+id/thirty"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/_30_min"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textColor="#8BC34A" />
+
+        <Button
+            android:id="@+id/ok2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/ok"
+            android:textColor="#8BC34A" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Healthy</string>
+    <string name="quick_alarm">Quick Alarm</string>
+    <string name="recurring_alarm">Recurring Alarm</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="_1_hr">+1 HR</string>
+    <string name="_30_min">+30 min</string>
+    <string name="_24_hr">+24 HR</string>
+    <string name="delete">DELETE</string>
+    <string name="would_you_like_to_delete_this_alarm">Would you like to delete this alarm?</string>
+    <string name="delete_alarm">Delete Alarm</string>
+    <string name="snooze">Snooze</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="alarm_receiver">Alarm Receiver</string>
+
+    <string name="scan">Scan for Device</string>
+    <string name="active">Get Active</string>
+
+    <string name="calibrate">Calibrate</string>
+    <string name="directions">Directions</string>
+    <string name="directions_text">Apply enough pressure to the activ5 device in order to remain within 10 of the target value.</string>
+    <string name="exit">Exit</string>
+    <string name="start">Start</string>
+
+    <string name="nul">NULL</string>
+</resources>
