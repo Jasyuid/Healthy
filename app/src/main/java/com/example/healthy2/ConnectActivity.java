@@ -11,12 +11,10 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.StringDef;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.content.pm.PackageManager;
@@ -32,7 +30,6 @@ import android.widget.Button;
 
 public class ConnectActivity extends AppCompatActivity implements A5BluetoothCallback {
 
-    private int counter = 0;
     private CountDownTimer timer = null;
 
     private TextView status_text = null;
@@ -72,7 +69,6 @@ public class ConnectActivity extends AppCompatActivity implements A5BluetoothCal
             }
         });
 
-        //final Toast no_connection = Toast.makeText(this, "No Device connected!", Toast.LENGTH_SHORT);
         active_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,20 +121,12 @@ public class ConnectActivity extends AppCompatActivity implements A5BluetoothCal
                         android.Manifest.permission.ACCESS_FINE_LOCATION
                 )
                 ) {
-                    // Show an explanation to the user *asynchronously* -- don't block
-                    // this thread waiting for the user's response! After the user
-                    // sees the explanation, try again to request the permission.
                 } else {
-                    // No explanation needed, we can request the permission.
                     ActivityCompat.requestPermissions(
                             this,
                             new String[] {android.Manifest.permission.ACCESS_FINE_LOCATION},
                             998
                     );
-
-                    // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-                    // app-defined int constant. The callback method gets the
-                    // result of the request.
                 }
             }
         }
@@ -157,20 +145,12 @@ public class ConnectActivity extends AppCompatActivity implements A5BluetoothCal
                         android.Manifest.permission.ACCESS_COARSE_LOCATION
                 )
                 ) {
-                    // Show an explanation to the user *asynchronously* -- don't block
-                    // this thread waiting for the user's response! After the user
-                    // sees the explanation, try again to request the permission.
                 } else {
-                    // No explanation needed, we can request the permission.
                     ActivityCompat.requestPermissions(
                             this,
                             new String[] {android.Manifest.permission.ACCESS_COARSE_LOCATION},
                             998
                     );
-
-                    // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-                    // app-defined int constant. The callback method gets the
-                    // result of the request.
                 }
             }
         }

@@ -30,7 +30,6 @@ public class ActivActivity extends AppCompatActivity {
     private int target = 0;
     private ArrayList<Boolean> zoneTracker = new ArrayList<Boolean>();
 
-    private TextView current_text = null;
     private TextView average_text = null;
     private TextView time_text = null;
 
@@ -107,13 +106,10 @@ public class ActivActivity extends AppCompatActivity {
                 getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.calibration_popup, null);
 
-        // create the popup window
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
         int height = LinearLayout.LayoutParams.WRAP_CONTENT;
         final PopupWindow popupWindow = new PopupWindow(popupView, width, height, false);
 
-        // show the popup window
-        // which view you pass in doesn't matter, it is only used for the window tolken
         popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
 
         average_text = popupWindow.getContentView().findViewById(R.id.average_force);
